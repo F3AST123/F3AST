@@ -18,6 +18,3 @@ Training will produce checkpoints, predictions for the val split, and prediction
 To evaluate a set of predictions with 4 metrics (accuracy, edit score, success rate, and mean Average Precision), use python3 eval.py -s <split> <model_dir_or_prediction_file>.
 
 * `<model_dir_or_prediction_file>`: can be the saved directory of a model containing predictions or a path to a prediction file.
-
-## Acknowledgement
-This code base is largely from [E2E-Spot](https://github.com/jhong93/spot). Many thanks to the authors.
