@@ -18,14 +18,10 @@ To train a model, use `python3 train_vid2seq.py <dataset_name> <frame_dir> -s <s
 
 Training will produce checkpoints, predictions for the `val` split, and predictions for the `test` split on the best validation epoch.
 
-To evaluate a set of predictions with 4 metrics (accuracy, edit score, success rate, and mean Average Precision), use `python3 eval.py -s <split> <model_dir_or_prediction_file>`.
-
-* `<model_dir_or_prediction_file>`: can be the saved directory of a model containing predictions or a path to a prediction file.
-
 ### Trained models
 Models and configurations can be found in [f3ast-model](https://github.com/F3AST123/F3AST/tree/main/f3ast-model). Place the checkpoint file and config.json file in the same directory.
 
-To perform inference with an already trained model, use `python3 test_e2e.py <model_dir> <frame_dir> -s <split> --save`. This will save the predictions in the model directory, using the default file naming scheme.
+To perform inference with an already trained model, use `python3 test_e2e.py <model_dir> <frame_dir> -s <split> --save`. This will output results for 4 evaluation metrics (accuracy, edit score, success rate, and mean Average Precision).
 
 ## Data format
 Each dataset has plaintext files that contain the list of classes and events in each video: `classes.txt`
