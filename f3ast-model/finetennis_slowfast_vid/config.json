@@ -1,0 +1,22 @@
+{
+  "batch_size": 4,
+  "clip_len": 128,
+  "crop_dim": 224,
+  "dataset": "finetennis",
+  "epoch_num_frames": 2000000,
+  "feature_arch": "slowfast",
+  "gpu_parallel": false,
+  "learning_rate": 5e-05,
+  "local_frame_dir": null,
+  "mask_ratio": 0.15,
+  "max_seq_len": 30,
+  "num_classes": 58,
+  "num_epochs": 50,
+  "sparse_att_mask": true,
+  "start_val_epoch": 30,
+  "stride": 3,
+  "temporal_arch": "f3ast",
+  "use_local": false,
+  "warm_up_epochs": 3,
+  "with_tolerance": true
+}
