@@ -651,7 +651,7 @@ def main(args):
             args.save_dir, 'checkpoint_{:03d}.pt'.format(best_epoch))))
 
         # Evaluate on hold out splits
-        eval_splits += ['test']
+        eval_splits = ['test']
         for split in eval_splits:
             split_path = os.path.join(
                 'data', args.dataset, '{}.json'.format(split))
