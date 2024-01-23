@@ -366,7 +366,7 @@ def evaluate(model, dataset, split, classes, with_tolerance=False, device='cuda'
     # accuracy, edit score, success rate, mean Average Precision
     edit_scores = []
     y_true, y_pred = None, None
-    acc, num_samples, num_actions = 0, 0, 0
+    acc, sr, num_samples, num_actions = 0, 0, 0, 0
     for video, (pred, pred_prob) in sorted(pred_dict.items()):
         gt = dataset.get_labels(video)
         pred_prob = pred_prob[pred != 0]
